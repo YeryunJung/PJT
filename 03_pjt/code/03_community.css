@@ -1,0 +1,28 @@
+/* 03_community.css */
+/* 아래에 코드를 작성해 주세요. */
+h1 {
+  padding: 20px 0;
+}
+
+main {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 90%;
+}
+
+aside{
+  display: flex;
+}
+
+.d-none {
+  padding-left: 25px;
+}
+
+.pagination {
+  justify-content: center; 
+}
+
+.pagination-nav {
+  padding: 20px 0;
+  margin: 0 auto;
+}
