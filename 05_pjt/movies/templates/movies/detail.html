@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+{% block content %}
+<h1>DETAIL</h1>
+<hr>
+<p><b>{{movie.title}}</b></p>
+<p>{{movie.description}}</p>
+
+<a href="{% url 'movies:update' movie.pk %}">UPDATE</a><br>
+<form action="{% url 'movies:delete' movie.pk %}" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="DELETE" />
+<form><br>
+<a href="{% url 'movies:index' %}">BACK</a>
+
+{% endblock content %}
