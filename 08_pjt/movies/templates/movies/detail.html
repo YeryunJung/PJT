@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>DETAIL</h1>
+
+  <hr>
+  <p><b>제목 : {{movie.title}}</b></p>
+  <p><b>개봉일 : {{movie.release_date}}</b></p>
+  <p><b>인기 : {{movie.popularity}}</b></p>
+  <p><b>평점 : {{movie.vote_average}}</b></p>
+
+  <a href="{% url 'movies:index' %}">뒤로가버리기</a>
+  
+{% endblock %}
